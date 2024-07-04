@@ -13,16 +13,13 @@ body {
 
 #left {
     flex: 1;
-    position: relative;
+   
 }
 
 #right {
     flex: 2;
 }
 
-#banner-container {
-    position: relative;
-}
 
 #banner {
     display: block;
@@ -31,17 +28,6 @@ body {
     height: auto;
 }
 
-#logo {
-    position: absolute;
-    top: 10rem; /* Adjust top position */
-    left: 240px; /* Adjust left position */
-    text-align: center;
-}
-
-#logo-image {
-    width: 120px; /* Set the fixed width of the logo image */
-    height: auto;
-}
 
 
 
@@ -145,4 +131,3 @@ legend {
     font-weight: bold;
     color: #007bff;
 }
-::backdrop
