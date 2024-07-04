@@ -13,25 +13,136 @@ body {
 
 #left {
     flex: 1;
+    position: relative;
 }
 
 #right {
     flex: 2;
 }
 
+#banner-container {
+    position: relative;
+}
+
 #banner {
-    max-width: 100%; 
-    height: auto;
     display: block;
-    margin-bottom: 20px;
+    
+    width: clamp(400px, 100%, 100%);
+    height: auto;
 }
 
 #logo {
+    position: absolute;
+    top: 10rem; /* Adjust top position */
+    left: 240px; /* Adjust left position */
     text-align: center;
 }
 
 #logo-image {
-    max-width: 100%; 
+    width: 120px; /* Set the fixed width of the logo image */
     height: auto;
 }
 
+
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+#form-container {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#form-row {
+    display: flex;
+    gap: 10px;
+}
+
+#right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 40px;
+}
+
+p {
+    font-size: 2rem;
+    width: 600px;
+    word-wrap: break-word;
+    overflow: hidden;
+}
+
+form div {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+input[type="password"]:focus {
+    border-color: #007bff; /* Blue border on focus */
+    outline: none;
+}
+
+#form-container {
+    margin-top: 20px;
+}
+
+#form-row {
+    display: flex;
+    gap: 20px;
+}
+
+#form-row > div {
+    flex: 1;
+}
+
+.form-submit {
+    text-align: center;
+}
+
+input[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+
+
+legend {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #007bff;
+}
+::backdrop
