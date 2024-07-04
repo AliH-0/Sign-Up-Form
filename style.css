@@ -143,3 +143,13 @@ input:valid {
 input[type="password"]:valid {
     border-color: #007bff;
 }
+
+#login>p {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.2rem;
+}
+a{
+    color: #0056b3;
+    font-weight: bolder;
+    text-decoration: none;
+}
