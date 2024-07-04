@@ -1,3 +1,3 @@
 # Sign-Up Form
 
-### Practice sign-up form using only css
+### Practice making a simple sign-up form using only css
